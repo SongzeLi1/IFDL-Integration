@@ -4,9 +4,9 @@
 
 This project has compiled some existing tamper detection and localization algorithms to facilitate comparative experiments mentioned in the paper. Below is a detailed list of these algorithms along with links to their respective academic papers.
 
+
 ## 算法列表 / Algorithm List
 
-<p align="center">
 ### 1. DenseFCN
 **论文 / Paper**: [Image tampering localization using a dense fully convolutional network](https://ieeexplore.ieee.org/abstract/document/9393396)<br>
 **代码 / Code**: [DenseFCN Link to Github](https://github.com/ZhuangPeiyu/Dense-FCN-for-tampering-localization)
@@ -30,4 +30,4 @@ This project has compiled some existing tamper detection and localization algori
 **论文 / Paper**: [CFL-Net: Image forgery localization using contrastive learning](https://openaccess.thecvf.com/content/WACV2023/papers/Niloy_CFL-Net_Image_Forgery_Localization_Using_Contrastive_Learning_WACV_2023_paper.pdf)
 <br>
 **代码 / Code**: [CFL-Net Link to Github](https://github.com/Kishor-Bhaumik/CFLNet/tree/master)
-</p>
+

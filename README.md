@@ -30,4 +30,7 @@ This project has compiled some existing tamper detection and localization algori
 **论文 / Paper**: [CFL-Net: Image forgery localization using contrastive learning](https://openaccess.thecvf.com/content/WACV2023/papers/Niloy_CFL-Net_Image_Forgery_Localization_Using_Contrastive_Learning_WACV_2023_paper.pdf)
 <br>
 **代码 / Code**: [CFL-Net Link to Github](https://github.com/Kishor-Bhaumik/CFLNet/tree/master)
-
+### 6. ManTra-Net
+**论文 / Paper**: [ManTra-Net: Manipulation Tracing Network for Detection and Localization of Image Forgeries With Anomalous Features](https://openaccess.thecvf.com/content_CVPR_2019/papers/Wu_ManTra-Net_Manipulation_Tracing_Network_for_Detection_and_Localization_of_Image_CVPR_2019_paper.pdf)
+<br>
+**代码 / Code**: [ManTra-Net Link to Github](https://github.com/SunnyHaze/ManTraNet-Pytorch/tree/main)

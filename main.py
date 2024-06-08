@@ -1,5 +1,5 @@
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+os.environ['CUDA_VISIBLE_DEVICES'] = '7'
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -28,7 +28,7 @@ from models.mvssnet import get_mvss
 from models.CFLNet import CFLNet
 from models import denseFCN
 from models.senet import Movenet
-
+from models.ManTraNet.Mantra_Net import ManTraNet
 
 ######## For Model ###############
 def create_model(params):
@@ -56,6 +56,9 @@ def create_model(params):
             in_planes = test_model(torch.randn((2, 3, 512, 512)))[0].shape[1]
             del test_model
         model = CFLNet(cfg_cfl, in_planes)
+
+    if params == 'MantraNet':
+        model = ManTraNet()
 
     model = model.cuda()
     model = nn.DataParallel(model).cuda()
@@ -412,11 +415,13 @@ if __name__ == '__main__':
     random.seed(42)
     parent_dir = os.getcwd()
     params = {
-        "model_name": 'CFLNet',   # DFCN | senet | rrunet | mvss | CFLNet
-        "mode": "train",          # train | infer | val
+        # model_name: DFCN | senet | rrunet | mvss | CFLNet | MantraNet
+        "model_name": 'MantraNet',
+        # mode: train | infer | val
+        "mode": "train",
         "lr": 0.0001,
-        "batch_size": 16,
-        "test_batch_size": 8,
+        "batch_size": 1,
+        "test_batch_size": 1,
         "num_workers": 4,
         "epochs": 200,
         "non_blocking_": True,

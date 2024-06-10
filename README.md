@@ -29,9 +29,9 @@ This project has compiled some existing tamper detection and localization algori
 
 ## 配置 / Requirements
 
-  -Python 3.8.16  
-  -Pytorch 1.10.0  
-  -Torchvision 0.11.0  
+  - Python 3.8.16  
+  - Pytorch 1.10.0  
+  - Torchvision 0.11.0  
 <br>
 
 ## 运行 / Run

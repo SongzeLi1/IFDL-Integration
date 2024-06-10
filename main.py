@@ -25,7 +25,7 @@ from tools.MultLoss import WeightedDiceBCE
 
 from models.rrumodel import Ringed_Res_Unet
 from models.mvssnet import get_mvss
-from models.CFLNet import CFLNet
+from models.CFLNet.CFLNet import CFLNet
 from models import denseFCN
 from models.senet import Movenet
 from models.ManTraNet.Mantra_Net import ManTraNet
@@ -48,7 +48,7 @@ def create_model(params):
                          )
 
     if params == 'CFLNet':
-        with open('models/config/config.yaml', 'r') as file:
+        with open('models/CFLNet/config/config.yaml', 'r') as file:
             cfg_cfl = yaml.load(file, Loader=yaml.FullLoader)
         with torch.no_grad():
             test_model = timm.create_model(cfg_cfl['model_params']['encoder'], pretrained=False, features_only=True,
@@ -416,11 +416,11 @@ if __name__ == '__main__':
     parent_dir = os.getcwd()
     params = {
         # model_name: DFCN | senet | rrunet | mvss | CFLNet | MantraNet
-        "model_name": 'MantraNet',
+        "model_name": 'CFLNet',
         # mode: train | infer | val
         "mode": "train",
         "lr": 0.0001,
-        "batch_size": 1,
+        "batch_size": 2,
         "test_batch_size": 1,
         "num_workers": 4,
         "epochs": 200,

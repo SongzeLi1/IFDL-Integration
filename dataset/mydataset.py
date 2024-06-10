@@ -67,24 +67,12 @@ def random_transform(image):
 
 
 class UNetDataset(Dataset):
-    def __init__(self, dirs_train, dirs_mask, train_transform=None, val_transform=None, mode='train', data_type=1):
+    def  __init__(self, dirs_train, dirs_mask, train_transform=None, val_transform=None, mode='train', data_type=1):
         super(UNetDataset, self).__init__()
         self.mode = mode
         self.type = data_type
         self.dataTrain = []
         self.dataMask = []
-
-        # orig
-        # self.dirTrain = dir_train
-        # self.dirMask = dir_mask
-        # self.dataTrain = [os.path.join(self.dirTrain, filename)
-        #                   for filename in os.listdir(self.dirTrain)
-        #                   if filename.endswith('.jpg') or filename.endswith('.png') or filename.endswith('.tif')]
-        # self.dataTrain.sort()
-        # self.dataMask = [os.path.join(self.dirMask, filename)
-        #                  for filename in os.listdir(self.dirMask)
-        #                  if filename.endswith('.jpg') or filename.endswith('.png') or filename.endswith('.tif')]
-        # self.dataMask.sort()
 
         # # # # add # # # #
         # only tamper or orig

@@ -1,7 +1,7 @@
 # 项目概述 / Project Overview
 
 为了便于进行论文中的对比实验，本项目整理了部分现有的篡改检测定位算法。以下是详细的算法列表及各自对应的学术论文链接。
-
+<br>
 This project has compiled some existing tamper detection and localization algorithms to facilitate comparative experiments mentioned in the paper. Below is a detailed list of these algorithms along with links to their respective academic papers.
 <br>
 

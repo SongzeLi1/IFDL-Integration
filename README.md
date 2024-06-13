@@ -38,5 +38,5 @@ This project has compiled some existing tamper detection and localization algori
 
 Run the code as follows:
 ```
-python main.py
+main.py
 ```

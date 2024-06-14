@@ -41,5 +41,6 @@ Run the code as follows:
 python main.py
 ```
 **Parameter**：
-model_name: DFCN | senet | rrunet | mvss | CDLNet | MantraNet
+model_name: DFCN | senet | rrunet | mvss | CDLNet | MantraNet  
+<br>
 mode: train | infer | val

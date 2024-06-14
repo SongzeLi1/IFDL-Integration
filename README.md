@@ -38,5 +38,8 @@ This project has compiled some existing tamper detection and localization algori
 
 Run the code as follows:
 ```
-main.py
+python main.py
 ```
+**Parameter**：
+model_name: DFCN | senet | rrunet | mvss | CDLNet | MantraNet
+mode: train | infer | val

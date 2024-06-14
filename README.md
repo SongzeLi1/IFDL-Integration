@@ -31,8 +31,8 @@ This project has compiled some existing tamper detection and localization algori
 
   - Python 3.8.16  
   - Pytorch 1.10.0  
-  - Torchvision 0.11.0  
-<br>
+  - Torchvision 0.11.0
+
 
 ## 运行 / Run
 
